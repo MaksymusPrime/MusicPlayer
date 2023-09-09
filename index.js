@@ -216,13 +216,13 @@ function setUpdate() {
             currentSeconds = "0" + currentSeconds;
         }
         if (currentSeconds < 10) {
-            durationSeconds = "0" + durationSeconds;
+            durationSeconds = durationSeconds;
         }
         if (currentMinutes < 10) {
             currentMinutes = "0" + currentMinutes;
         }
         if (currentMinutes < 10) {
-            durationMinutesMinutes = "0" + durationMinutesMinutes;
+            durationMinutes = "0" + durationMinutes;
         }
 
         curr_time.textContent = currentMinutes + ":" + currentSeconds;
