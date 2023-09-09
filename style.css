@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* color: whitesmoke; */
 }
 
 .player {
@@ -172,13 +173,12 @@ i.fa-step-forward {
     justify-content: center;
 }
 
-.loader,
-.stroke {
+.loader .stroke {
     background: #f1f1f1;
-    height: 150%;
+    height: 90%;
     width: 10px;
     border-radius: 50px;
-    margin: 0 50px;
+    margin: 0 10px;
     animation: animate 1.4s linear infinite;
 }
 @keyframes animate {
