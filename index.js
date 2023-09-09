@@ -87,4 +87,49 @@ function random_bg_color () {
 
     }
     
+let Color1 = populate('#');
+let Color2 = populate('#');
+var angle = 'to right';
+
+let gradient = 'linear-gradient('+ angle + ',' + Color1 + ',' + Color2 + ')';
+document.body.style.background = gradient;
 }
+
+function reset() {
+    curr_time.textContent = '00:00';
+    total_duration.textContent = '00:00';
+    seek_slider.value = '0';
+}
+
+function randomTrack () {
+    isRandom ? pauseRandom() : playRandom();
+}
+
+function playRandom () {
+    isRandom = true;
+    randomIcon.classList.add('randomActive');
+}
+
+function pauseRandom () {
+    isRandom = false;
+    randomIcon.classList.remove('randomActive');
+}
+
+function repeatTrack () {
+    let current_index = track_index;
+    loadTrack(current_index);
+    playTrack();
+}
+
+function playpauseTrack () {
+    isPlaying ? pauseTrack() : playTrack();
+}
+
+function playTrack () {
+    curr_track.play();
+    isPlaying = true;
+    track_art.classList.add('rotate');
+    wave.classList.add('loader');
+    playpause_btn.innerHTML = '<i class="fa-pause-circle fa-5x"></i>';
+}
+
