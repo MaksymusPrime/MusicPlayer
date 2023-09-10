@@ -33,7 +33,7 @@ const music_list = [
         music: 'music/Sugar.mp3'
     }, {
         img: 'images/kiss.jpg',
-        name: 'I was made for Loving You',
+        name: 'I was made...',
         artist: 'Kiss',
         music: 'music/Kiss.mp3'
     }, {
